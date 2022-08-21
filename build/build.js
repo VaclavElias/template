@@ -66,5 +66,5 @@ module.exports = { buildTemplate, buildContent }
 
 if (require.main === module) {
   buildTemplate()
-  buildContent()
+  //buildContent()
 }

@@ -5,7 +5,14 @@
   --navbar-bg-color: #164268;
 }
 
-$primary: #2d74b2 !default;
+$stride-red: #FC365B;
+$stride-red-web: #da0830;
+$stride-green: #08DA30;
+$stride-blue: #20C5F5;
+
+$primary: $stride-red-web;
+
+/*$primary: #2d74b2 !default;*/
 $link-decoration: none !default;
 $link-hover-decoration: underline !default;
 $container-max-widths: (
@@ -13,6 +20,7 @@ $container-max-widths: (
 ) !default;
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 @import '../node_modules/highlight.js/styles/stackoverflow-light.css';
 @import './styles/layout.scss';
 @import './styles/article.scss';

@@ -8,6 +8,14 @@ body {
   align-items: stretch;
 }
 
+.bg-dark {
+  background-image: url(../images/top/svg/bg_dark.svg);
+}
+
+.bg-light {
+  background-image: url(../images/top/svg/bg_light.svg);
+}
+
 .sticky-top {
   position: sticky;
   top: 0;
