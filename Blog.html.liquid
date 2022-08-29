@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {{metadata}}
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ page._rel }}dist/docfx.css">
+</head>
+<body>
+  <header>
+    {%- include header -%}
+  </header>
+  <main class="container-xxl layout-{{layout}} page-type-{{pageType}}">
+  <div class="bg-dark pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-8 col-sm-12">
+                {% assign fruits = "orange,apple,peach" | split: ',' %}
+                {%- for post in page._vegetables -%}
+                <article class="card mb-4 p-4">
+                    <div class="row justify-content-center">
+                        <div class="text-center col-lg-4 col-md-12 d-none d-lg-block pe-2">
+                            {{ post }} {{ page._enableSearch }} {{ page._allPages }}
+                            <p>{{ page._vegetables }}</p>
+                            <p>{{ page._path }}</p>
+                            <p>{{ page.updated_at }}</p>
+                            <p>{{ page.wordCount }}</p>
+                            <p>{{ page.excerpt }}</p>
+                        </div>
+                    </div>
+                </article>
+                {%- endfor -%}
+                {{ content }}
+            </div>
+            <aside class="col-lg-3 col-md-4 col-sm-12">
+                Aside
+            </aside>
+        </div>
+    </div>
+</div>
+  </main>
+
+  <footer>
+    {%- include footer -%}
+  </footer>
+
+  <script type="text/javascript" src="{{ page._rel }}dist/docfx.js"></script>
+</body>
+
+</html>
