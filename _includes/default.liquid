@@ -6,10 +6,9 @@
   <!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHN3F8B" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>-->
   <!-- End Google Tag Manager (noscript) -->
   {% include header2 %}
-  {% include test.html %}
-  {% include test.html %}
+  {% assign name = 'Vaclav Elias' %}
+  {% include test.html myValue:name %}
   {{ content }}
-  {% include test.html %}
   <script src="{{ site.baseurl}}/scripts/_scripts/bootstrap.bundle.min.js"></script>
 </body>
 </html>
