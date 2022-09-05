@@ -1,0 +1,6 @@
+﻿[
+  {
+    "outputFile": "src/docfx.css",
+    "inputFile": "src/docfx.scss"
+  }
+]
