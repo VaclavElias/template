@@ -22,10 +22,13 @@
     {%- endunless -%}
 
     <nav class="layout-toc">
-      {%- include toc -%}
-      <p class="alert alert-warning">
-        This html content (in this box) is from <strong>Default.html</strong> layout. This demonstrates using layouts as html. <span class="badge bg-danger">Experimental</span>
-      </p>
+        {%- include toc -%}
+        <p class="alert alert-warning">
+            This html content (in this box) is from <strong>Default.html</strong> layout. This demonstrates using layouts as html. <span class="badge bg-danger">Experimental</span>
+        </p>
+        <div class="row">
+            {% include card.html cardTitle: 'Title 1', style: 'light', text: 'I am defined in the <code>Default.html</code> layout and rendered through <code>card.html</code>.' %}
+        </div>
     </nav>
 
     <article>
